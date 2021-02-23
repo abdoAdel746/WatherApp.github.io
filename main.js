@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
             lat = position.coords.latitude;//store lattiude
             long = position.coords.longitude;//store longttiude
 
-            let proxy = "https://cors-anywhere.herokuapp.com/"
+            let proxy = "http://api.scrapestack.com/scrape?access_key=28b8762be84b37df3a624532e67b2e3d"
             //let api = `${proxy}https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${long}&key=2b62abbc0d8c4da28a49f47fa4a7213e&include=minutely`
             let api2 = `${proxy}https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=9e4eea12c7c91d9ccc88ec6e9b2e0a76`
             /* fetch the data api then respnose to it then make you wnat in another function */
