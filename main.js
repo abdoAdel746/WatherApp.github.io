@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
 
             let proxy = "https://cors-anywhere.herokuapp.com/"
             //let api = `${proxy}https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${long}&key=2b62abbc0d8c4da28a49f47fa4a7213e&include=minutely`
-            let api2 = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=9e4eea12c7c91d9ccc88ec6e9b2e0a76`
+            let api2 = `${proxy}http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=9e4eea12c7c91d9ccc88ec6e9b2e0a76`
             /* fetch the data api then respnose to it then make you wnat in another function */
             fetch(api2)
                 .then((response) => {
